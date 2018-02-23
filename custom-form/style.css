@@ -1,0 +1,117 @@
+
+body{
+	margin:0 auto;
+    background: #b2c2d2;
+}
+.msform {
+	width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+}
+.msform fieldset {
+	border: 0 none;
+	border-radius: 3px;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	position: absolute; /* All fieldsets under eachother */
+}
+
+/* Only show first fieldset */
+.msform fieldset:not(:first-of-type) {
+	display: none;
+}
+
+/*inputs*/
+.msform input, .msform textarea {
+	padding: 15px;
+	border: 1px solid #094076;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	color: #094076;
+	font-size: 13px;
+}
+.msform input:focus, .msform textarea:focus{
+    box-shadow: 0 0 0 2px #e85c0c;
+}
+
+/*buttons*/
+.msform .action-button-form {
+    width: 100px;
+	font-weight: bold;
+	color: #094076;
+	border: 4px solid #094076;
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+.msform .action-button-form:hover, .msform .action-button-form:focus {
+    box-shadow: 0 0 0 2px #e85c0c;
+    background: #e85c0c;
+}
+
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #094076;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #094076;
+	margin-bottom: 20px;
+}
+
+/*progressbar*/
+.progressbar-form {
+	margin-bottom: 30px;
+	overflow: hidden;
+	counter-reset: step;/*CSS counters to number the steps*/
+}
+.progressbar-form li {
+	list-style-type: none;
+	color: #094076;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 20%;
+	float: left;
+	position: relative;
+}
+.progressbar-form li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #fff;
+	background: #094076;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+.progressbar-form li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+    background: #e85c0c;
+    color: #094076;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /* Placing behind numbers */
+}
+.progressbar-form li:first-child:after {
+	content: none; /* Connector not for the first step */
+}
+/* Make active/completed steps orange */
+.progressbar-form li.active:before,  .progressbar-form li.active:after{
+	background: #e85c0c;
+	color: #094076;
+}
