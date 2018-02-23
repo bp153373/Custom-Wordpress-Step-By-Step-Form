@@ -2,6 +2,7 @@
 Custom contact form for WordPress (wpfc7) Step By Step with how to install docs.
 
 I had to create a custom form for in a banner but didn't want to use the height.
+<img src="https://gyazo.com/0d9e449b168af34d61ceac0ce34d604c.gif" alt="examplegif">
 
 <b>How to install</b>
 1. Download the .zip and open the files in a code editor.
