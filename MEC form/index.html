@@ -1,0 +1,66 @@
+
+    <h3 style="color:#094076;font-weight:600;">What do you think about this form?</h3>
+    <h4 style="color:#094076;">Start up and customize.</h4>
+    
+    <div class="msform">
+    
+        <!-- progressbar -->
+        <ul class="progressbar-form">
+            <li class="active">Name &amp; Company Name</li>
+            <li>E-mail &amp; Phone</li>
+            <li>Amount &amp; Date</li>
+            <li>Subject</li>
+            <li>Comments &amp; Send</li>
+        </ul>
+
+        <!-- fieldsets -->
+        <fieldset>
+            <h2 class="fs-title">Step 1</h2>
+            <h3 class="fs-subtitle">Fill out your name and company name.</h3>
+            [text* your-name class:required placeholder "Name*"] 
+            [text your-company placeholder "Company name"]
+            <p style="color:#094076;">* = required</p>
+            <input type="button" name="next" class="next action-button-form" value="Next" />    
+        </fieldset>
+
+        <fieldset>
+            <h2 class="fs-title">Step 2</h2>
+            <h3 class="fs-subtitle">Fill out your e-mail and phonenumber.</h3>   
+            [email* your-email class:required placeholder "E-mail*"]
+            [tel* your-tel class:required placeholder "Phonenumber*"]
+            <p style="color:#094076;">* = required</p>
+            <input type="button" name="previous" class="previous action-button-form" value="Previous" />
+            <input type="button" name="next" class="next action-button-form" value="Next" />
+        </fieldset>
+
+        <fieldset>
+            <h2 class="fs-title">Step 3</h2>
+            <h3 class="fs-subtitle">Fill out your amount and preferred date.</h3>    
+            [number your-amount min:1 max:10 placeholder "Amount"]
+            [date your-date min:2018-03-01 placeholder "Date"]
+            <input type="button" name="previous" class="previous action-button-form" value="Previous" />
+            <input type="button" name="next" class="next action-button-form" value="Next" />
+        </fieldset>
+
+        <fieldset>
+            <h2 class="fs-title">Step 4</h2>
+            <h3 class="fs-subtitle">Fill out your subject.</h3>   
+            [text* your-message class:required placeholder "Subject*"]
+            <p style="color:#094076;">* = required</p>
+            <input type="button" name="previous" class="previous action-button-form" value="Previous" />
+            <input type="button" name="next" class="next action-button-form" value="Next" />
+        </fieldset>
+
+        <fieldset>
+            <h2 class="fs-title">Details</h2>
+            <h3 class="fs-subtitle">Questions or comments about this form?</h3>
+            [textarea your-details placeholder "Questions / Comments"]
+            <input type="button" name="previous" class="previous action-button-form" value="Previous" /> [submit class:next class:submit-form class:action-button-form "Verzenden"]
+        </fieldset>
+
+        <fieldset>
+            <h2 class="fs-title">Thank you!</h2>
+            <h3 class="fs-subtitle">Your message has been sent.</h3>
+        </fieldset>
+    </div>    
+
