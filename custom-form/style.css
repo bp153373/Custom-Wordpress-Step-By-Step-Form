@@ -115,3 +115,39 @@ body{
 	background: #e85c0c;
 	color: #094076;
 }
+
+/*===========================================================
+  TABLETS AND DOWN
+============================================================*/
+.msform{
+width: 350px;
+}
+.msform fieldset p{
+width:210px;
+}
+.msform .action-button-form-white, .msform .action-button-form{
+width:90px;
+}
+
+/*===========================================================
+  MOBILE ONLY
+============================================================*/
+.msform{
+width: 250px;
+}
+.progressbar-form, .progressbar-form-small{
+margin: 0 0 0 20px;
+}
+.progressbar-form li{
+width: 17,5%;
+}
+.progressbar-form-small li{
+width: 16%;
+}
+.progressbar-form-small li p, .progressbar-form li p{
+ display: none;
+}
+.msform fieldset{
+margin: 0;
+width:100%;
+}
