@@ -21,3 +21,6 @@ I had to create a custom form for in a banner but didn't want to use the height.
 2. Add 'class:required' to the shortcode of the inputs, which are required, in the contact form.
 3. Requirement is being checked in the script if it's empty, the value type remains unchecked.
 4. Free for use and customization.
+
+UPDATE:
+ - Added CSS for responsiveness 
